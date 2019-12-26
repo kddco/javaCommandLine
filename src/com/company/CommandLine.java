@@ -10,7 +10,10 @@ public class CommandLine {
         //String cmd = "chcp 65001 && python C:\\Users\\kddc\\PycharmProjects\\python_STT\\STT_Controller.py";
 
         try {
-            Process process = Runtime.getRuntime().exec("cmd /c start C:\\Users\\kddc\\PycharmProjects\\python_STT\\STT_Controller.py");
+            Process process = Runtime.getRuntime().exec("cmd /c start C:\\Users\\wayne\\PycharmProjects\\python_STT\\STT_Controller.py");
+            //筆電路徑
+            
+            process = Runtime.getRuntime().exec("cmd /c start C:\\Users\\wayne\\PycharmProjects\\python_STT\\STT_Controller.py");
             InputStream is = process.getInputStream();
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader br = new BufferedReader(isr);
